@@ -1,0 +1,81 @@
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+.image-card {
+    border-radius: 20px;
+    width: 50rem;
+    height: 10rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 2px;
+    overflow: hidden; /* Clip the image to the card */
+    position: relative;
+    z-index: 1; /* Set z-index to be behind the circle */
+}
+.image-card img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: blue;
+    padding: auto;
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+}
+.circle-inline {
+    border-radius: 50%; /* Make it a circle */
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+
+    z-index: 5; /* Set z-index to be behind the image card */
+}
+.circle-inline img{
+    object-fit: fill;
+    height: 95%;
+    border-radius: 51%;
+    width: 95%;
+    align-items: center;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    position: absolute;
+    
+}
+.text-section{
+    margin-left: 30px ;
+    padding-left: 30px;
+}
+.flex-container{
+    margin-left: 30px;
+    padding-left: 30px;
+    text-size-adjust: initial;
+    flex: auto;
+}
+.edit-btn{
+    border: 1;
+    border-radius:23px;
+    left: 5px;
+    width: 5rem;
+    height: 2rem;
+    border-color: blueviolet;
+}
+.add-btn{
+   border: none;
+    border-radius:23px;
+    left: 5px;
+    width: 5rem;
+    height: 2rem;
+    background-color: rgb(138, 39, 232);
+    color: white;
+    box-shadow: seashell;
+}
+.add-btn:hover{
+    background-color: rgb(186, 130, 237);
+    
+}
