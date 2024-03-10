@@ -79,3 +79,30 @@ body {
     background-color: rgb(186, 130, 237);
     
 }
+.bar-graph-container {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+.bar-graph {
+    margin-left: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 38rem;
+    height: 300px;
+    border: 1px thin #bf13ce;
+    padding: 20px;
+  }
+  .bar {
+    width: 5px;
+    background-color: #9b14e9;
+    transition: height 0.5s ease;
+  }
+  .bar-label {
+    margin-left: 3px;
+    margin-top: 5px;
+    text-align: flex-end;
+    position: relative;
+    
+  }
